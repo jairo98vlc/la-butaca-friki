@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineStream - Peliculas y Series</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🎬 CineStream</h1>
+        <nav>
+            <button onclick="showSection('peliculas')">Pel&iacute;culas</button>
+            <button onclick="showSection('series')">Series</button>
+            <button onclick="showSection('novedades')">Novedades</button>
+            <button onclick="showSection('plataformas')">Plataformas</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="peliculas" class="active">
+            <h2>🎥 Cat&aacute;logo de Pel&iacute;culas</h2>
+            <div id="peliculas-grid" class="media-grid"></div>
+        </section>
+
+        <section id="series">
+            <h2>📺 Cat&aacute;logo de Series</h2>
+            <div id="series-grid" class="media-grid"></div>
+        </section>
+
+        <section id="novedades">
+            <h2>🆕 Novedades de Cine</h2>
+            <div id="novedades-grid" class="media-grid"></div>
+        </section>
+
+        <section id="plataformas">
+            <h2>📡 Disponibilidad por Plataforma</h2>
+            <div id="plataformas-list"></div>
+        </section>
+    </main>
+
+    <div id="loading" class="loading">Cargando...</div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
